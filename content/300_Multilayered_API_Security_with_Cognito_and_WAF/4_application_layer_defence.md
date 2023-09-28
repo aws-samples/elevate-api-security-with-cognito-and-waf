@@ -1,10 +1,4 @@
----
-title: "Application layer defence"
-date: 2021-05-31T11:16:08-04:00
-chapter: false
-pre: "<b>4. </b>"
-weight: 4
----
+## Application layer defence
 
 In this section we will tighten security using AWS WAF further to mitigate the risk of vulnerabilities such as SQL Injection, Distributed denial of service (DDoS) and other common attacks. WAF allows you to create your own custom rules to decide whether to block or allow HTTP requests before they reach your application.
 
@@ -23,7 +17,7 @@ https://Your_CloudFront_Domain_Name/?id=1 or 1=1
 
 As you can see from the output, using this simple SQL injection could result in an attacker gaining access to all the data in our database:
 
-![Section4 Access through CloudFront](/Security/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section4/section4-sql_injection.png)
+![Section4 Access through CloudFront](../../static/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section4/section4-sql_injection.png)
 
 This section of the lab will focus on some techniques which work to block web requests that contain malicious SQL code or SQL injection using AWS WAF.
 
@@ -31,37 +25,39 @@ This section of the lab will focus on some techniques which work to block web re
 
 1. From CloudFormation, locate the second stack which you deployed. On the stack **Outputs** tab, click **WAFWebACLG** to go to **Web ACLs** to review Rules in WAF. This web ACL is associated with CloudFront.
 
-![Section4 Output WAF](/Security/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section4/section4-waf_global_cloudfront.png)
+![Section4 Output WAF](../../static/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section4/section4-waf_global_cloudfront.png)
 
 2. Go to the **Rules** tab and select **add managed rule groups** as shown:
 
-![Section4 Add AWS Managed Rule](/Security/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section4/section4-add_aws_managed_rule.png)
+![Section4 Add AWS Managed Rule](../../static/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section4/section4-add_aws_managed_rule.png)
 
 3. Expand the **AWS managed rule groups** section and enable the **SQL database** rules as shown: 
-![Section4 Enable SQL database](/Security/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section4/section4-enable_sql_database.png)
+![Section4 Enable SQL database](../../static/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section4/section4-enable_sql_database.png)
 
 By doing this we are adding rules that allow you to block request patterns associated with exploitation specific to SQL databases, such as SQL injection attacks. Make sure you select **Add rules** at the bottom of the screen to proceed to the next stage.
 
 4. It is possible to assign priorities based on the rules which you specify. As you only have one rule at this moment, we can skip this configuration. Click **Save**:
 
-![Section4 Set Rule Priority](/Security/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section4/section4-set_rule_priority.png)
+![Section4 Set Rule Priority](../../static/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section4/section4-set_rule_priority.png)
 
 5. You should now be able to see the **AWS-AWSManagedRulesSQLiRuleSet** added to web ACL as shown:
 
-![Section4 AWS AWSManagedRulesSQLiRuleSet](/Security/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section4/section4-AWS-AWSManagedRulesSQLiRuleSet.png)
+![Section4 AWS AWSManagedRulesSQLiRuleSet](../../static/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section4/section4-AWS-AWSManagedRulesSQLiRuleSet.png)
 
 6. We can now rerun our test again, which should hopefully produce a different output. 
 
 Use your **CloudFrontEndpoint** to run the same query as before, inclusive of the injection attack at the end. This can be done in either a web-browser or your Cloud9 IDE environment using the script that we have provided previously:
 
-![Section4 Block SQL Injection](/Security/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section4/section4-block_sql_injection.png)
+![Section4 Block SQL Injection](../../static/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section4/section4-block_sql_injection.png)
 
 If your configuration is correct, you should now see a **Response code: 403**. This means that WAF has **blocked** this request as malicious code has been detected in the input.
 
 
 7. We can now check that the blocked request has registered in our ACL metrics. To do this, go to the **Overview** in WAF console to see the metrics of ACL. You can confirm your request was blocked by WAF from this metrics. Click **AWS-AWSManagedRulesSQLiRuleSet BlockedRequests** to see only blocked request by SQL database. Note that your output may differ from the screenshot below depending on the amount of blocked requests that you sent.
 
-![Section4 SQL Injection MetricGblocked Requests](/Security/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section4/section4-sql_injection_metricGblocked_requests.png)
+![Section4 SQL Injection MetricGblocked Requests](../../static/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section4/section4-sql_injection_metricGblocked_requests.png)
+
+Click [Contol access to API](./5_control_access_to_API.md)
 ___
 **END OF SECTION 4**
 ___
