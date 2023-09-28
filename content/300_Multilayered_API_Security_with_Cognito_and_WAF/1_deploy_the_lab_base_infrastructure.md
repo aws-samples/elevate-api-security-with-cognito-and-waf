@@ -91,6 +91,7 @@ When you have downloaded all packages, upload all 3 to your new bucket with the 
 > Take a note of APIGatewayURL as we will often use this URL for testing.
 
 2. In Cloud9, execute the script called sendRequest.py with the argument of your APIGatewayURL.
+
 ```
 python sendRequest.py 'APIGatewayURL'
 ```

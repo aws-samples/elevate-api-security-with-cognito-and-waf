@@ -73,6 +73,7 @@ If you are experiencing the same failure as previously, check that you have adde
 ![Section2 New Credentials](../../static/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section2/section2-new_secret.png)
 
 11. Let's confirm if the password in the database has been successfully updated based on the automatic rotation. To do this, go back to **Cloud9** in the console and execute the script called sendRequest.py with the argument of your APIGatewayURL. You will need to change to the walab-scripts directory to execute the script. Make sure you replace **'APIGatewayURL'** with the value you previously used from the Cloudformation stack output.
+
 ```
 python sendRequest.py 'Enter your APIGatewayURL here'
 ```
