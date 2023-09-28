@@ -80,7 +80,7 @@ Once your command runs successfully, you should be see a 200 Response code with 
 
 ![Section1 Test API Cloud9](../../static/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section1/section1-test_api_cloud9.png)
 
-Click [Prevent requests from accessing API directly](./300_Multilayered_API_Security_with_Cognito_and_WAF/
+Click [Prevent requests from accessing API directly](./300_Multilayered_API_Security_with_Cognito_and_WAF/)
 ___
 **END OF SECTION 2**
 ___
