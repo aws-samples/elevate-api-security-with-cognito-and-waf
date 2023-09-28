@@ -29,7 +29,7 @@ In this lab we will walk you through an example scenario of securing your API at
 
 
 ## Getting Started
-Our lab is divided into several sections as follows:
+To start our lab, click the following link in order:
 
 1. [Deploy the lab base infrastructure](./content/300_Multilayered_API_Security_with_Cognito_and_WAF/1_deploy_the_lab_base_infrastructure.md)
 2. [Use secrets securely](./content/300_Multilayered_API_Security_with_Cognito_and_WAF/2_use_secrets_securely.md)
