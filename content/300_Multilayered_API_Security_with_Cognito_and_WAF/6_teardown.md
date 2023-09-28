@@ -14,7 +14,6 @@ Simply delete 3 CloudFormation stack created in this lab.
 From the CloudWatch console, select **Log group** under **Logs** and select the log group which you created in the lab.
 
 Select the **Actions** button and delete the log group confirming the deletion.
-***
 
 __
 
