@@ -57,7 +57,7 @@ If your configuration is correct, you should now see a **Response code: 403**. T
 
 ![Section4 SQL Injection MetricGblocked Requests](../../static/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section4/section4-sql_injection_metricGblocked_requests.png)
 
-Click [Contol access to API](./5_control_access_to_API.md)
+Click [Contol access to API](./5_control_access_to_API.md).
 ___
 **END OF SECTION 4**
 ___
