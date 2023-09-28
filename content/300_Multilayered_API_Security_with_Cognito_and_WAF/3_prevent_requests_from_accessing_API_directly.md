@@ -109,11 +109,11 @@ You should notice a different output based on the argument that you pass to the 
 
 Check that your output is similar to the screenshot below:
 
-![Section3 Test API Cloud9](/Security/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section3/section3-test_api_cloud9.png)
+![Section3 Test API Cloud9](../../static/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section3/section3-test_api_cloud9.png)
 
 2. Now go back to the WAF Console and select the **Overview** tab to see the metrics of the ACL. You can confirm your request was blocked by WAF from this metrics. Click **{Your Stack Name}-ACLMetricR BlockedRequests** BlockedRequests to see only blocked request by SQL database. 
 
-![Section3 ACLMetricR Blocked Requests](/Security/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section3/section3-metricR_blocked_requests.png)
+![Section3 ACLMetricR Blocked Requests](../../static/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section3/section3-metricR_blocked_requests.png)
 
 > [!NOTE]
 > Your graph shape will be different depending on the number of times you executed the script with the CloudFront Endpoint and the APIgateway address.
