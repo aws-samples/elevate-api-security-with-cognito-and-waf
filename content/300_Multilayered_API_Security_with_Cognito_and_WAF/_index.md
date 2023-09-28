@@ -1,18 +1,4 @@
----
-title: "Level 300: Multilayered API Security with Cognito and WAF"
-menutitle: "Multilayered API Security with Cognito and WAF"
-date: 2021-05-30T11:16:08-04:00
-chapter: false
-weight: 1
----
-
-## Authors
-
-* **Jang Whan Han**, Well-Architected Geo Solutions Architect.
-* **Tim Robinson**, Well-Architected Geo Solutions Architect.
-
-
-## Introduction
+## Elevate API Security with Cognito and WAF
 
 APIs are used for integration between applications and assist our customers in delivering new digital businesses as public APIs in partner ecosystems. Due to the public nature of these APIs, security is a top concern for all organizations who seek to develop APIs to augment their existing business models. Although API security now benefits from increased awareness and product feature coverage, application leaders must create and implement an effective API security strategy which aligns with their business needs. An example of an effective approach to secure an API is to adopt a [Zero Trust](https://aws.amazon.com/blogs/publicsector/how-to-think-about-zero-trust-architectures-on-aws/) strategy which ensures only authorized requests are permitted to access the business layer of your application. Additionally, evaluating trust at multiple layers of the architecture allows multiple checks to be performed as the API data transits through the workload.
 
