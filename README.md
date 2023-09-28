@@ -12,19 +12,6 @@ In this lab we will walk you through an example scenario of securing your API at
 * [AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html) - Used to protect our API by filtering, monitoring, and blocking malicious traffic.
 * [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html) - Used to enable access control for API
 
-Our lab is divided into several sections as follows:
-
-1. Deploy the lab base infrastructure.
-2. Use secrets securely.
-3. Prevent requests from accessing API directly.
-4. Application layer defense.
-5. Contol access to API.
-
-We have included CloudFormation templates for the first few steps to get your started and build out the base lab infrstructure. For the remainder of the lab we will use further templates what will deploy addtional services such as CloudFront, WAF and Cognito to further enhance the security of the workload. The remainder of the lab will then focus on the configuration of these services to create an example API environment which is secured at multiple layers.
-
-> [!NOTE]
-> For simplicity, we have used North Virginia **'us-east-1'** as the default region for this lab. Please ensure all lab interaction is completed from this region.
-
 ## Goals
 
 * Store and use secrets securely
@@ -39,6 +26,22 @@ We have included CloudFormation templates for the first few steps to get your st
 
 > [!NOTE]
 > You will be billed for any applicable AWS resources used if you complete this lab that are not covered in the [AWS Free Tier](https://aws.amazon.com/free/).
+
+
+## Getting Started
+Our lab is divided into several sections as follows:
+
+1. [Deploy the lab base infrastructure](./content/300_Multilayered_API_Security_with_Cognito_and_WAF/1_deploy_the_lab_base_infrastructure.md)
+2. [Use secrets securely](./content/300_Multilayered_API_Security_with_Cognito_and_WAF/2_use_secrets_securely.md)
+3. [Prevent requests from accessing API directly](./content/300_Multilayered_API_Security_with_Cognito_and_WAF/3_prevent_requests_from_accessing_API_directly.md)
+4. [Application layer defense](./content/300_Multilayered_API_Security_with_Cognito_and_WAF/4_application_layer_defence.md)
+5. [Contol access to API](./content/300_Multilayered_API_Security_with_Cognito_and_WAF/5_control_access_to_API.md)
+6. [Tear down](./content/300_Multilayered_API_Security_with_Cognito_and_WAF/6_teardown.md)
+
+We have included CloudFormation templates for the first few steps to get your started and build out the base lab infrstructure. For the remainder of the lab we will use further templates what will deploy addtional services such as CloudFront, WAF and Cognito to further enhance the security of the workload. The remainder of the lab will then focus on the configuration of these services to create an example API environment which is secured at multiple layers.
+
+> [!NOTE]
+> For simplicity, we have used North Virginia **'us-east-1'** as the default region for this lab. Please ensure all lab interaction is completed from this region.
 
 ## License
 
