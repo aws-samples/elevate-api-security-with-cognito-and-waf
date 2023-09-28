@@ -1,17 +1,11 @@
----
-title: "Deploy the lab base infrastructure"
-date: 2021-05-31T11:16:08-04:00
-chapter: false
-weight: 1
-pre: "<b>1. </b>"
----
+## Deploy the lab base infrastructure
 
 In this section we will build out our base lab infrastructure. This will consist of a public API gateway which connects to Lambda (application layer). The application layer will connect to RDS for MySQL (database layer) within a [Virtual Private Cloud (VPC)](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html). The environment will be deployed to separate private subnets which will allow for segregation of application and network traffic across multiple [Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html). We will also deploy an [Internet Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html) and [NAT gateway](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html) along with appropriate routes from both public and private subnets.
 
 
 When we successfully complete our initial stage template deployment, our deployed workload should reflect the following diagram:
 
-![Section1 Base Architecture](/Security/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section1/section1-deploy_the_lab_base_infrastructure.png)
+![Section1 Base Architecture](../../static/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section1/section1-deploy_the_lab_base_infrastructure.png)
 
 
 Note the following:
