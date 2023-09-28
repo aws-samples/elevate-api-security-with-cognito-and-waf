@@ -40,7 +40,7 @@ To start our lab, click the following link in order:
 
 We have included CloudFormation templates for the first few steps to get your started and build out the base lab infrstructure. For the remainder of the lab we will use further templates what will deploy addtional services such as CloudFront, WAF and Cognito to further enhance the security of the workload. The remainder of the lab will then focus on the configuration of these services to create an example API environment which is secured at multiple layers.
 
-> [!NOTE]
+> [!IMPORTANT]
 > For simplicity, we have used North Virginia **'us-east-1'** as the default region for this lab. Please ensure all lab interaction is completed from this region.
 
 ## License
