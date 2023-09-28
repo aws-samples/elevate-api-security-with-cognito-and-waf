@@ -16,3 +16,6 @@ From the CloudWatch console, select **Log group** under **Logs** and select the 
 Select the **Actions** button and delete the log group confirming the deletion.
 ***
 
+___
+**You have successfully deleted all resources you deployed.**
+___
