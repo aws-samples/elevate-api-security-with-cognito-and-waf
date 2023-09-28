@@ -29,7 +29,7 @@ To deploy the template for the base infrastructure complete the following steps:
 To deploy the second CloudFormation template, you can deploy directly via the console.
 You can get the template [here.](../../static/300_Multilayered_API_Security_with_Cognito_and_WAF/Code/templates/section1/section1-base.yaml "Section1 template")
 
-#### Console:
+#### AWS Console:
 
 If you need detailed instructions on how to deploy CloudFormation stacks from within the console, please follow this [guide.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-create-stack.html)
 
