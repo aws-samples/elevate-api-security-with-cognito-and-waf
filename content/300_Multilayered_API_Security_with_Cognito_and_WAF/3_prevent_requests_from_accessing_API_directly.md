@@ -118,7 +118,7 @@ Check that your output is similar to the screenshot below:
 > [!NOTE]
 > Your graph shape will be different depending on the number of times you executed the script with the CloudFront Endpoint and the APIgateway address.
 
-Click [Application layer defense](./4_application_layer_defence.md)
+Click [Application layer defense](./4_application_layer_defence.md).
 ___
 **END OF SECTION 3**
 ___
