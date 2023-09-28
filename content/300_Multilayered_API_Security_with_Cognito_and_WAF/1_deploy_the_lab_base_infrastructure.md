@@ -98,7 +98,7 @@ Once your command runs successfully, you should be seeing Response code 200 with
 
 ![Section1 Test API Cloud9](../../static/300_Multilayered_API_Security_with_Cognito_and_WAF/Images/section1/section1-test_api_cloud9.png)
 
-Click [Use secrets securely](../300_Multilayered_API_Security_with_Cognito_and_WAF/2_use_secrets_securely.md).
+Click [Use secrets securely](./2_use_secrets_securely.md).
 
 ___
 **END OF SECTION 1**
