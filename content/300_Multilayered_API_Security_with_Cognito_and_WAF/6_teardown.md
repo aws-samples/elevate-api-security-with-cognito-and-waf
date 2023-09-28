@@ -18,5 +18,5 @@ Select the **Actions** button and delete the log group confirming the deletion.
 
 __
 
-**You have successfully deleted all resources you deployed**
+**You have successfully deleted all resources you deployed.**
 __
